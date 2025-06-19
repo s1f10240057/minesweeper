@@ -283,7 +283,7 @@ export default function Home() {
         className={`${styles.bigboard} ${styles.flexColumn}`}
         style={{ width: `${boardsize[0] * 30 + 50}px`, height: `${boardsize[1] * 30 + 120}px` }}
       >
-        <div className={styles.partRow} style={{ height: `${partSize}px` }} />
+        <div style={{ height: `${partSize}px` }} />
         <div className={`${styles.scoreboard}`} style={{ width: `${boardsize[0] * 30 + 8}px` }}>
           <div className={styles.numberSelect}>
             <div className={styles.num}>{numTostr(bombnum - flagCheck(userInputs))}</div>
@@ -298,7 +298,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.partRow} style={{ height: `${partSize}px` }} />
+        <div style={{ height: `${partSize}px` }} />
 
         <div
           className={`${styles.board} ${styles.btnBorderReverse}`}
@@ -359,7 +359,7 @@ export default function Home() {
             ),
           )}
         </div>
-        <div className={styles.partRow} style={{ height: `${partSize}px` }} />
+        <div style={{ height: `${partSize}px` }} />
       </div>
     </div>
   );
