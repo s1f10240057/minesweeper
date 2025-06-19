@@ -1,120 +1,134 @@
 .container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
   min-height: 100vh;
   padding: 0 0.5rem;
 }
 
-.main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 0;
+.sampleCell {
+  width: 30px;
+  height: 30px;
+  background: url('~/src/assets/images/icons.png') no-repeat;
+  border: 1px solid black;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-}
-
-.footer > a {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.title {
-  margin: 0;
-  font-size: 4rem;
-  line-height: 1.15;
-  text-align: center;
-}
-
-.title > a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title > a:hover,
-.title > a:focus,
-.title > a:active {
-  text-decoration: underline;
-}
-
-.description {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.code {
-  padding: 0.75rem;
-  font-family:
-    Menlo, 'Monaco, Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono', 'Courier New', monospace;
-  font-size: 1.1rem;
-  border-radius: 5px;
-}
-
-.grid {
+.board {
   display: flex;
   flex-wrap: wrap;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+}
+
+.btnBorder {
+  color: #fff;
+  background-color: #c0c0c0;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #7b7b7b;
+  border-bottom: 4px solid #7b7b7b;
+  border-left: 4px solid #fff;
+}
+
+.btnBorderReverse {
+  color: #fff;
+  background-color: #c0c0c0;
+  border-top: 4px solid #7b7b7b;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  border-left: 4px solid #7b7b7b;
+}
+
+.flag {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-image: url('~/src/assets/images/icons.png');
+  background-repeat: no-repeat;
+  background-size: 308px 22px;
+}
+
+.face {
+  width: 35px;
+  height: 35px;
+  margin: 0 30px;
+  background: url('~/src/assets/images/icons.png') no-repeat;
+  background-position: 0 0;
+  background-size: auto;
+}
+
+.face:active {
+  border-top: 4px solid #7b7b7b;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  border-left: 4px solid #7b7b7b;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  width: 40px;
+}
+
+.chageBtn {
+  width: 210px;
+  margin-top: 5px;
+}
+
+.numberSelect {
+  position: relative;
+  top: 2px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bigboard {
+  align-items: center;
+  background-color: #c0c0c0;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #7b7b7b;
+  border-bottom: 5px solid #7b7b7b;
+  border-left: 5px solid #fff;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
-  margin-top: 3rem;
+  height: 53px;
+  background-color: #c0c0c0;
+  border-top: 5px solid #7b7b7b;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #7b7b7b;
 }
 
-@media (width <= 600px) {
-  .grid {
-    flex-direction: column;
-    width: 100%;
-  }
+@font-face {
+  font-family: MyFont;
+  src: url('~/src/assets/Let_s_go_Digital_Regular.ttf') format('truetype');
 }
 
-.card {
-  width: 45%;
-  padding: 1.5rem;
-  margin: 1rem;
-  color: inherit;
-  text-align: left;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card > h2 {
-  margin: 0 0 1rem;
-  font-size: 1.5rem;
-}
-
-.card > p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.num {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 40px;
+  font-family: MyFont, sans-serif;
+  font-size: 270%;
+  font-weight: 800;
+  color: red;
+  text-align: center;
+  background-color: black;
+  border-top: 2px solid #7b7b7b;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #7b7b7b;
 }
